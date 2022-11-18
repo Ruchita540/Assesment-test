@@ -1,0 +1,54 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    position: relative;
+    animation-name: ruchita101;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ruchita101{
+    0%{
+        top: 0px;
+        left: 0px;
+        right: 1000px;
+        background: linear-gradient(red, blue, green);
+    }
+    25%{
+        top: 0px;
+        left: 400px;
+        background: linear-gradient(pink, blue, red);
+        animation-timing-function: ease-in;
+    }
+    50%{
+        top: 400px;
+        left: 400px;
+        background: linear-gradient(yellow, blue, gold);
+    }
+    75%{
+        top: 400px;
+        left: 0px;
+        background: linear-gradient(gray, white, pink);
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background: linear-gradient(navy, red, yellow);
+    }
+}
+@media only screen and (min-width:100px) and (max-width:1200px){
+    .box{
+        background: linear-gradient(red, yellow, green);
+    }
+    .h1{
+        top: 100px;
+    }
+}
